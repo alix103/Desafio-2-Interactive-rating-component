@@ -29,17 +29,17 @@ body{
     font-family: var(--fuente);
     background-color: var(--background);
     font-size: 15px;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
+    
 }
 
 .container, .container-thank-you{
-    width: 21rem;
-    height: 20rem;
-    /*margin-bottom: 20px;*/
+    max-width: 21rem;
+    max-height: 20rem;
 }
 
 .container .imagen img{
@@ -141,9 +141,9 @@ button.boton:hover{
     display: block;
 }
 
-/*.ocultar{
+.ocultar{
     display: none;
-}*/
+}
 
 .container-thank-you p.select{
     background-color: var(--background-select);
@@ -155,4 +155,15 @@ button.boton:hover{
     padding: 0.5rem;
     font-size: 14px;
     margin-left: 3.9rem;
+}
+
+.attribution{
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.attribution a{
+    color: rgb(52, 52, 240);
 }
