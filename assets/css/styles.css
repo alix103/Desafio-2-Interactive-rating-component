@@ -1,0 +1,24 @@
+:root{
+    --background: #141519;
+    --background-card: #1c252f;
+    --background-boton: #232f38;
+    --color-title: #fdfffe;
+    --color-text: #79828c;
+    --color-num: #788390;
+    --background-submit: #ff6d00;
+    --color-submit: #fff3d1;
+    --fuente: 'Overpass', sanserif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    margin: 20px;
+    font-family: var(--fuente);
+    background-color: var(--background);
+}
