@@ -5,6 +5,8 @@
     --color-title: #fdfffe;
     --color-text: #79828c;
     --color-num: #788390;
+    --background-select: #232f38;
+    --color-select: #cd7135;
     --background-submit: #ff6d00;
     --color-submit: #fff3d1;
     --fuente: 'Overpass', sanserif;
@@ -17,8 +19,83 @@
 }
 
 body{
-    text-align: center;
-    margin: 20px;
+    margin: 24px;
     font-family: var(--fuente);
     background-color: var(--background);
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.container .imagen img{
+    background-color: var(--background-boton);
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+
+.container ul li button{
+    background-color: var(--background-boton);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.container, .container-thank-you{
+    padding: 24px;
+    border-radius: 10px;
+    background-color: var(--background-card);
+}
+
+section h1, h2{
+    color: var(--color-title);
+}
+
+section h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section h2{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.text{
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.container .contenido ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.container .contenido ul li{
+    list-style-type: none;
+}
+
+.container .contenido ul li button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: var(--color-num);
+}
+
+button.boton{
+    background-color: var(--background-submit);
+    border: none;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1rem;
+    color: var(--color-submit);
+}
+
+.container-thank-you p.select{
+    background-color: var(--background-select);
+    color: var(--color-select);
 }
