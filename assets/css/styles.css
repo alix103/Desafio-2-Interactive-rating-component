@@ -38,7 +38,8 @@ body{
 
 .container, .container-thank-you{
     width: 21rem;
-    height: 21rem;
+    height: 20rem;
+    /*margin-bottom: 20px;*/
 }
 
 .container .imagen img{
@@ -51,6 +52,7 @@ body{
     background-color: var(--background-boton);
     padding: 1rem;
     border-radius: 50%;
+    font-family: var(--fuente);
 }
 
 .container, .container-thank-you{
@@ -76,6 +78,7 @@ section h2{
 .text{
     color: var(--color-text);
     margin-bottom: 1rem;
+    font-size: 13px;
 }
 
 .container .contenido ul{
@@ -111,10 +114,13 @@ section h2{
 button.boton{
     background-color: var(--background-submit);
     border: none;
-    width: 15rem;
-    height: 2rem;
+    width: 17.9rem;
+    height: 2.5rem;
     border-radius: 1rem;
     color: var(--color-submit);
+    font-weight: 500;
+    font-family: var(--fuente);
+    letter-spacing: 0.2rem;
 }
 
 button.boton:hover{
@@ -123,7 +129,30 @@ button.boton:hover{
     cursor: pointer;
 }
 
+.container-thank-you{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-thanks{
+    display: block;
+}
+
+/*.ocultar{
+    display: none;
+}*/
+
 .container-thank-you p.select{
     background-color: var(--background-select);
     color: var(--color-select);
+    margin-top: 20px;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    font-size: 14px;
+    margin-left: 3.9rem;
 }
